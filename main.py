@@ -31,7 +31,6 @@ class ProcessingVideo:
         self.count_proc = count_proc
         self._process_list = []
         self.queue = queue
-        self._killer = ProcessKiller(self._process_list)
 
     def initialize_workers(self):
         for i in range(self.count_proc):
